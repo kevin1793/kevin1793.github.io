@@ -2,9 +2,9 @@
        // Set data to send over here
         var values = {
             "email": "test" + Math.ceil(Math.random() * 100000) + "@veratad.com", // This field is required to identify existing customers.
-            "first_name": "Kevin",
-            "last_name": "Claveria",
-            "dob": "19941016" // This field must match the following format: YYYYMMDD. This field is also required
+            "first_name": "Thomas",
+            "last_name": "Canfarotta",
+            "dob": "19920621" // This field must match the following format: YYYYMMDD. This field is also required
         };
 
         // var values = {
