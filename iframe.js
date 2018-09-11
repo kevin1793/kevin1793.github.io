@@ -1,28 +1,28 @@
        console.log('hi');
        // Set data to send over here
-        // var values = {
-        //     "email": "test" + Math.ceil(Math.random() * 100000) + "@veratad.com", // This field is required to identify existing customers.
-        //     "first_name": "Shenol",
-        //     "last_name": "Hoines",
-        //     "address": "109 High Street",
-        //     "city": "Westbury",
-        //     "state": "BA133BN",
-        //     "zip": "BA133BN",
-        //     "dob": "19460109" // This field must match the following format: YYYYMMDD. This field is also required
-        // };
+        var values = {
+            "email": "test" + Math.ceil(Math.random() * 100000) + "@veratad.com", // This field is required to identify existing customers.
+            "first_name": "Shenol",
+            "last_name": "Hoines",
+            "address": "109 High Street",
+            "city": "Westbury",
+            "state": "BA133BN",
+            "zip": "BA133BN",
+            "dob": "19460109" // This field must match the following format: YYYYMMDD. This field is also required
+        };
 
-        var values = {"target" : {
-                "fn": "Shenol",                                 //Successful Test
-                "ln":"Hoines",
-                "building":"109",
-                "street":"High Street",
-                "city":"Westbury",
-                "zip":"BA133BN",
-                "dob": "1946-01-09"
-            },
-            "type" : "isVerified",
-            "reference":"9876543"
-        },
+        // var values = {"target" : {
+        //         "fn": "Shenol",                                 //Successful Test
+        //         "ln":"Hoines",
+        //         "building":"109",
+        //         "street":"High Street",
+        //         "city":"Westbury",
+        //         "zip":"BA133BN",
+        //         "dob": "1946-01-09"
+        //     },
+        //     "type" : "isVerified",
+        //     "reference":"9876543"
+        // },
 
         // Set Iframe URL here
         var url = 'https://register.veratad.com/vapewilduk/dcamsplus-v2.php';
