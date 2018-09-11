@@ -2,7 +2,7 @@
        // Set data to send over here
         var values = {
             "email": "test" + Math.ceil(Math.random() * 100000) + "@veratad.com", // This field is required to identify existing customers.
-            "first_name": "1",
+            "fn": "1",
             "last_name": "TEST",
             "address": "TEST",
             "city": "TEST",
