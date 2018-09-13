@@ -7,16 +7,12 @@
             // "dob": "19820621" // This field must match the following format: YYYYMMDD. This field is also required
         // };
 
-        // var values = {
-        //     "email": "test" + Math.ceil(Math.random() * 100000) + "@veratad.com", // This field is required to identify existing customers.
-        //     "first_name": "TEST",
-        //     "last_name": "TEST",
-        //     "address": "TEST",
-        //     "city": "TEST",
-        //     "state": "TEST",
-        //     "zip": "TEST",
-        //     "dob": "19770208" // This field must match the following format: YYYYMMDD. This field is also required
-        // };
+        var values = {
+            "email": "test" + Math.ceil(Math.random() * 100000) + "@veratad.com", // This field is required to identify existing customers.
+            "first_name": "Sean",
+            "last_name": "Kelly",
+            "dob": "19770926" // This field must match the following format: YYYYMMDD. This field is also required
+       };
 
         // Set Iframe URL here
         var url = 'https://register.veratad.com/vapewilduk/dcamsplus-v2.php';
