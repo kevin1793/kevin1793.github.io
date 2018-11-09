@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+
+        <!-- JQUERY -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <script src="js.js"></script>
+
+        <style>
+            h1, h2, h3{
+                margin: 0;
+                font-family: 'Great Vibes', cursive;
+            }
+            body{
+                margin: 0 auto;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .nav_cont{
+                width: 100%;
+                /* padding-top: 30px; */
+                background: #520b04;
+                box-shadow: 2px 2px #000;
+                z-index: 100;
+                display: flex;
+                flex-wrap: wrap;
+                position: fixed;
+                box-shadow: 2px 2px 2px #000;
+            }
+            .nav_header{
+                width: 100%;
+                text-align: center;
+            }
+            .nav_header img{
+                margin: 0 auto;
+                
+                margin-bottom: 30px;
+            }
+            .nav_items{
+                margin: 0 auto;
+                display: inline-flex;
+                text-align: center;
+                max-width: 400px;
+            }
+            .nav_item{
+                text-align: center;
+                padding: 5px 10px;
+                color: white;
+                font-weight: bold;
+            }
+            .nav_item:hover{
+                background-color: #eee;
+                color: black;
+                transition: background-color color .5s;
+            }
+            .navbar1{
+                width: 200px;
+            }
+            .navbar3{
+                width: 200px;
+                color: white;
+                font-weight: bold;
+            }
+            .navbar2{
+                text-align: center;
+                padding: 10px 0px;
+                margin: 0 auto;
+                font-size: 18px;
+            }
+            .home1{
+                height: 850px;
+                background-image: url(images/bg-nails2.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 99;
+                box-shadow: 2px 2px 2px #333;
+                
+            }
+            .home1_header{
+                font-family: 'Great Vibes', cursive;
+                text-align: center;
+                color: white;
+                padding-top: 80px;
+                font-size: 90px;
+                text-shadow: 2px 3px #333;
+                font-weight: bold;
+                position: relative;
+                z-index: 55;
+            }
+            .home1_header2{
+                font-family: 'Great Vibes', cursive;
+                text-align: center;
+                color: white;
+                position: relative;
+                font-size: 60px;
+                text-shadow: 2px 3px #333;
+                z-index: 55;
+            }
+            .home2_header h2{
+                text-align: center;
+                font-size: 49px;
+                padding-top: 80px;
+                padding-bottom: 30px;
+            }
+            .awards{
+                padding-top: 80px;
+                justify-content: center;
+                display: flex;
+                margin: 0 auto;
+                text-align: center;
+                width: 400px;
+            }
+            .award_img{
+                /* margin: 0 auto; */
+                height: 150px;
+                width: 160px;
+            }
+            .awards img{
+                height: 150px;
+                width: 160px;
+                text-align: center;
+                /* margin: 0 auto; */
+            }
+            .service_cont{
+                flex-wrap: wrap;
+                display: flex;
+                margin: 0 auto;
+                text-align: center;
+                justify-content: center;
+            }
+            .service_item{
+                font-size: 20px;
+            }
+            .service_image{
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                box-shadow: 2px 2px #000;
+                margin: 15px;
+                background-size: cover;
+                background-position: center;
+                
+            }
+            .home2{
+                padding-bottom: 50px;
+            }
+            .home2_header{
+                text-align: center;
+                max-width: 800px;
+                line-height: 28px;
+                margin: 0 auto;
+            }
+            .home2_header h4{
+                font-family: 'Bad Script', cursive;
+                font-weight: bold;
+                font-size: 23px;
+            }
+            .footer div{
+                padding: 5px 10px;
+            }
+            .footer p{
+                margin: 0;
+            }
+            .footer2{
+                justify-content: center;
+                background: #202124;
+                color: white;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .footer3{
+                text-align: center;
+                display: flex;
+                margin: 0 auto;
+                flex-wrap: wrap;
+                justify-content: center;
+                background: white;
+                color: #202124;
+            }
+            .footer3 p{
+                text-align: center;
+                padding: 0px 20px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            .gallery_cont{
+                margin-top: 80px;
+                background: #520b04;
+                /* max-height: 550px; */
+            }
+            .slide{
+                max-width: 1000px;
+                margin: 0 auto;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+            .slide img{
+                /* max-height: 550px;
+                max-width: 1000px; */
+                /* height: 100%; */
+                
+                background-size: cover;
+                /* width: 100%; */
+                width: 100%;
+            }
+            .inner-carousel{
+                max-height: 550px;
+                max-width: 1000px;
+            }
+            .carousel-item{
+                height: 550px;
+                width: 1000px;
+                width: 100%;
+                /* height: 100%; */
+                margin-bottom: 25px;
+                background-size: cover;
+                background-position: center;
+            }
+            .w-100 {
+                width: unset !important;
+                margin: 0 auto !important;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="nav_cont">
+            <div class="navbar1">
+
+            </div>
+            <div class="navbar2">
+                <div class="nav_items">
+                    <a href="main.html">
+                        <span  class="nav_item">
+                            Home
+                        </span>
+                    </a>
+                    <a href="nails.html">
+                        <span class="nav_item">
+                            Nails
+                        </span>
+                    </a>
+                    <a href="spa.html">
+                        <span class="nav_item">
+                            Spa
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar3">
+                <!-- <p>Call Us (568) 247 6700</p> -->
+            </div>
+        </div>
+        <div class="">
+            
+        </div>
+        <div class="home1">
+            <!-- <img class="home_hover" src="images/bg-nails2.jpg"> -->
+            <h1 class="home1_header">
+                Cosi Bella
+            </h1>
+            <h3 class="home1_header2">
+                Let Us Take Care Of You
+            </h3>
+            <div class="awards">
+                <div class="award_img">
+                    <img src="images/award1_clear.PNG">
+                </div>
+                <div class="award_img">
+                    <img src="images/award2_clear.PNG">
+                </div>
+            </div>
+        </div>
+        <div class="home3">
+            <div class="home2_header">
+                <h2>
+                    Our Mission
+                </h2>
+                <h4>
+                    At Così Bella, our mission is simple; Leave our Salon feeling refreshed and rejuvenated and always looking your best. After all, you deserve to be pampered!
+                </h4>
+            </div>
+        </div>
+        <div class="gallery_cont">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('images/gallery1.jpg');">
+                        <!-- <img class="asdf" src="images/gallery1.jpg" alt="First slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url('images/gallery2.jpg');">
+                        <!-- <img class="asdf" src="images/gallery2.jpg" alt="Second slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery3.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery4.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery5.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery6.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery7.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery8.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                    <div class="carousel-item" style="background-image: url(images/gallery9.jpg);">
+                        <!-- <img class="asdf" src="images/gallery3.jpg" alt="Third slide"> -->
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="home2">
+            <div class="home2_header">
+                <h2 class="">
+                    Spa Treamtment
+                </h2>
+                
+                <h4 class="">
+                    Here at Cosi Bella, we provide quality service from head to toe. You can expect the best experience from the minute you walk in to the minute you walk out.
+                    We take pride in giving you the most relaxing service you can ask for.
+                </h4>
+            </div>
+            <div class="service_cont">
+                <div class="service_item">
+                    <div class="service_image" style="background-image: url(images/services_waxing.jpg)">
+
+                    </div>
+                    <h3>
+                        Waxing
+                    </h3>
+                </div>
+                <div class="service_item">
+                    <div class="service_image" style="background-image: url(images/services_foot.png)">
+
+                    </div>
+                    <h3>
+                        Foot Massage
+                    </h3>
+                </div>
+                <div class="service_item">
+                    <div class="service_image" style="background-image: url(images/services_massage.jpg)">
+
+                    </div>
+                    <h3>
+                        Body Massage
+                    </h3>
+                </div>
+                <div class="service_item">
+                    <div class="service_image" style="background-image: url(images/services_facial.png)">
+
+                    </div>
+                    <h3>
+                        Facials
+                    </h3>
+                </div>
+                <div class="service_item">
+                    <div class="service_image" style="background-image: url(images/services_eyelash.jpg)">
+
+                    </div>
+                    <h3>
+                        Eye Lash Extensions
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+
+            </div>
+            <div class="footer2">
+                <a style="text-decoration: none; color: white;" href="https://www.google.com/maps/dir//cosi+bella+spa+michigan/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8824e0caedb83d6b:0x964fcb07345b78b?sa=X&ved=2ahUKEwjk6IXxtpveAhUKZd8KHYI2DScQ9RcwAHoECAEQCQ"><p>
+                    3677 23 Mile Rd, Shelby Charter Township, MI 48315
+                </a></p>
+            </div>
+            <div class="footer3">
+                <p>&copy; All Rights Reserved. Cosi Bella Nail Spa, 2018</p>
+                <p>Designed By Kevin.</p>
+            </div>
+        </div>
+        
+    </body>
+</html>
