@@ -326,7 +326,8 @@
     background-size: cover;
     position: relative;
     box-shadow: 3px 3px 3px #000000;
-    transition: box-shadow .2s
+    transition: box-shadow .2s;
+    background-position: center;
 }
 .tile_row{
     flex-flow: wrap;
