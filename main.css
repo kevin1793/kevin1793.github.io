@@ -280,6 +280,9 @@
 .flex_item5 {
     order: 10;
 }
+.flex_item6 {
+    order: 9;
+}
 .tile img {
     height: 350px;
     width: 350px;
