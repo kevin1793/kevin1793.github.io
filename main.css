@@ -403,6 +403,9 @@
 .folder_img {
     height: 150px;
     width: auto;
+    box-shadow: #d2d2d2 2px 2px;
+    border: solid 2px white;
+    border-radius: 50%;
 }
 .folder_img_cont {
     text-align: center;
