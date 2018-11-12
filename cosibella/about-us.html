@@ -1,79 +1,160 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-        <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-        <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+        
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <script src="js.js"></script>
+
         <link rel="stylesheet" type="text/css" href="style/nav.css">
         <link rel="stylesheet" type="text/css" href="style/style.css">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet"> -->
 
         <style>
+            /*  */
             h1, h2, h3{
                 margin: 0;
                 font-family: 'Great Vibes', cursive;
             }
-            .home2_header h2{
-                text-align: center;
-                font-size: 49px;
-                padding-top: 80px;
-                padding-bottom: 30px;
-                font-weight: 700;
-                color: #333;
-                text-shadow: #a2a2a2 1px 1px;
-            }
             .home2{
                 padding-bottom: 50px;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding-left: 15px;
+                padding-right: 15px;
+
+                background: #ede9e4;
+                
+                box-shadow: #a2a2a2 2px 2px 2px 2px;
+                border: solid 1px #DAC4AE;
             }
             .home2_header{
                 text-align: center;
                 max-width: 800px;
                 line-height: 28px;
                 margin: 0 auto;
+                text-shadow: #d2d2d2 2px 2px;
             }
             .home2_header h4{
-                font-family: 'Bad Script', cursive;
-                font-weight: bold;
+                font-family: 'Niramit', sans-serif ;
+                font-weight: 600;
                 font-size: 23px;
             }
-            .contact_cont{
-                display: flex;
+            .home2_header h2{
+                text-align: center;
+                font-size: 49px;
+                padding-top: 80px;
+                padding-bottom: 30px;
+            }
+
+            /*  */
+            .service_cont{
+                /* flex-wrap: wrap; */
+                display: block;
+                margin: 0 auto;
+                text-align: center;
                 justify-content: center;
-                font-family: 'Niramit', sans-serif;
+                
             }
-            .contact_cont div{
-                padding: 20px;
+            .service_item h3{
+                padding:10px;
+                font-size: 23px;
+                transition: font-size 1s;
             }
-            .map{
-                padding: 0;
-                max-width: 600px;
-                /* width: 100% !important; */
-                height: 500px;
+            .service_item h3:hover{
+                font-size: 26px;
+                transition: font-size .5s;
             }
-            #map-container{
-                padding: 0;
-                max-width: 850px;
+            .service_item{
+                font-size: 20px;
+                height: 42px;
             }
-            /* iframe{
+            .service_image{
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                box-shadow: 2px 2px #000;
+                margin: 15px;
+                background-size: cover;
+                background-position: center;
+                
+            }
+
+            /*  */
+            .pricing{
                 max-width: 800px;
-            } */
+                margin: 0 auto;
+                padding-top: 50px;
+            }
+            .menu_cont{
+                padding-left: 15px;
+                padding-right: 15px;
+                max-width: 1200px;
+                margin: 0 auto;
+                
+                
+            }
+            .spacer{
+                padding-top: 100px;
+            }
+
+            /*  */
+
+            .item_cont{
+                display: flex;
+                margin: 0 auto;
+                flex-wrap: wrap;
+            }
+            .item_info{
+                display: flex;
+            }
+            .item_price p{
+                padding-left: 40px;
+            }
+            .item_box{
+                margin: 0 auto;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .item_box h6{
+                text-align: center;
+            }
+
+            h5{
+                padding-top: 20px;
+                margin: 0;
+                font-family: 'Bad Script', cursive;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            h6{
+                padding-top: 20px;
+                margin: 0;
+                font-family: 'Bad Script', cursive;
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 600;
+            }
+            h2{
+                font-weight: 800;
+            }
+            h3{
+                font-weight: 800;
+                font-size: 23px;
+            }
             .main_cont p{
                 padding-top: 20px;
                 margin: 0;
@@ -82,25 +163,54 @@
                 line-height: 28px;
                 font-weight: 600;
             }
-            .contact1 h4{
-                font-weight: bold;
-                margin-bottom:10px;
+            .pricing h2{
+                text-align: center;
+                font-size: 30px;
             }
-
-            @media screen and (max-width:900px){
-                .contact1{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-                .map{
-                    max-width: 100%;
-                }
-                .contact_cont{
-                    display: block;
-                    margin: 0 auto;
-                    justify-content: center;
-                }
+            .divider{
+                width: 100px;
+                border-bottom: solid 2px black;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            .para_item{
+                padding-top:5px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+            .fancy_image{
+                padding-bottom: 50px;
+            }
+            .main_cont{
+                max-width: 800px;
+                margin: 0 auto;
+                padding-top:50px;
+            }
+            .section_header{
+                text-align: center;
+                font-size: 49px;
+                padding-bottom: 30px;
+            }
+            .about1, .about2{
+                padding: 30px 20px;
+            }
+            .party_cont{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .party_pics img{
+                height: 200px;
+                margin: 10px;
+            }
+            .party_pics{
+                text-align: center;
+                justify-content: center;
+                margin: 0 auto;
+                padding-top:30px;
+            }
+            .section{
+                /* padding-top: 30px; */
+                margin-bottom: 50px;
             }
         </style>
     </head>
@@ -185,56 +295,46 @@
                 <!-- <p>Call Us (568) 247 6700</p> -->
             </div>
         </div>
-        <div class="">
-            
-        </div>
-        <div class="home2">
-            <div class="home2_header">
-                <h2 class="">
-                    Contact Us
+        <div class="main_cont">
+            <div class="about1 section">
+                <h2 class="section_header">
+                    About Us
                 </h2>
                 
-                <!-- <h4 class="">
-                    Here at Cosi Bella, we provide quality service from head to toe. You can expect the best experience from the minute you walk in to the minute you walk out.
-                    We take pride in giving you the most relaxing service you can ask for.
-                </h4> -->
+                <h6 class="standard_text">
+                    Let yourself drift far from the busy world on a gentle wave of bliss. Let 
+                    Così Bella Nail Spa be your sanctuary of tranquility and serenity. Our large 
+                    state-of- the-art facility and ventilation system is designed to let your 
+                    stresses of the day flow away like a river to the sea.  We offer precision manicures 
+                    and soothing pedicures in massage chairs that are fit for royalty.   Our practitioners 
+                    are professionally trained and can provide simple or highly-creative nail designs, 
+                    along with the most advanced nail treatments on the market today. A wide variety of 
+                    other quality beauty-enhancement services are proudly offered, ranging from facials 
+                    to massages to body hair removal.
+                </h6>
             </div>
-            <div class="contact_cont">
-                <div class="contact1">
-                    <div class="contact_item">
-                        <h4>
-                            Business Hours
-                        </h4>
-                        <p>
-                            Mon-Fri:    10am - 7pm<br>
-                            Saturday:  9am - 6pm<br>
-                            Sunday:    10am - 5pm
-                        </p>
-                    </div>
-                    <div class="contact_item">
-                        <h4>
-                            Address
-                        </h4>
-                        <p>
-                            13677  23 Mile  Rd,<br>
-                            Shelby Carter Township,<br>
-                            MI 48315
-                        </p>
-                    </div>
-                    <div class="contact_item">
-                        <h4>
-                            Tel:
-                        </h4>
-                        <a class="no_link" href="tel:5862476700">
-                            <p style="text-align: left;">
-                                (586) 247-6700
-                            </p>
-                        </a>
+            <div class="divider">
+
+            </div>
+            <div class="about2 section">
+                <h2 class="section_header">
+                    Parties
+                </h2>
+                
+                <div class="party_cont">
+                    <h6 class="standard_text">
+                        Così Bella Nail Spa is a perfect place to host a bridal shower, baby shower, birthday, 
+                        corporate event or just a get together with your friends or family.  Our 3,200 square-foot 
+                        facility has been designed with amenities to ensure your event is a special one.
+                    </h6>
+                    <div class="party_pics">
+                        <img src="images/party1.jpg">
+                        <img src="images/party2.jpg">
+                        <img src="images/party3.jpg">
+                        <img src="images/party4.jpg">
                     </div>
                 </div>
-                <div class="contact2">
-                        <iframe width="800" class="map"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>                    </div>
-                </div>
+
             </div>
         </div>
         <div class="footer_cont">
@@ -281,6 +381,5 @@
                 </a>
             </div>
         </div>
-        
     </body>
 </html>

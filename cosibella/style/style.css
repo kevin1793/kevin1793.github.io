@@ -18,3 +18,13 @@
 .footer_cont p{
     font-family: 'Niramit', sans-serif !important;
 }
+
+.standard_text{
+    font-family: 'Niramit', sans-serif ;
+    font-weight: 600;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Niramit', sans-serif !important;
+}
