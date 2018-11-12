@@ -22,6 +22,7 @@
 
         <script src="js.js"></script>
         <link rel="stylesheet" type="text/css" href="style/nav.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
 
         <style>
             h1, h2, h3{
@@ -126,35 +127,7 @@
                 font-weight: bold;
                 font-size: 23px;
             }
-            .footer div{
-                padding: 5px 10px;
-            }
-            .footer p{
-                margin: 0;
-            }
-            .footer2{
-                justify-content: center;
-                background: #202124;
-                color: white;
-                text-align: center;
-                font-size: 16px;
-                font-weight: 600;
-            }
-            .footer3{
-                text-align: center;
-                display: flex;
-                margin: 0 auto;
-                flex-wrap: wrap;
-                justify-content: center;
-                background: white;
-                color: #202124;
-            }
-            .footer3 p{
-                text-align: center;
-                padding: 0px 20px;
-                font-size: 14px;
-                font-weight: 600;
-            }
+            
 
             .gallery_cont{
                 margin-top: 80px;
@@ -194,7 +167,21 @@
                 margin: 0 auto !important;
                 
             }
-            
+            .product_cont{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .product_item{
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+            }
+            .product_image{
+                height: 50px;
+                width: auto;
+                background-size: cover;
+            }
         </style>
     </head>
     <body>
@@ -325,69 +312,67 @@
         <div class="home2">
             <div class="home2_header">
                 <h2 class="">
-                    Spa Treamtment
+                    Our Products
                 </h2>
                 
-                <h4 class="">
+                <!-- <h4 class="">
                     Here at Cosi Bella, we provide quality service from head to toe. You can expect the best experience from the minute you walk in to the minute you walk out.
                     We take pride in giving you the most relaxing service you can ask for.
-                </h4>
+                </h4> -->
             </div>
-            <div class="service_cont">
-                <div class="service_item">
-                    <div class="service_image" style="background-image: url(images/services_waxing.jpg)">
-
-                    </div>
-                    <h3>
-                        Waxing
-                    </h3>
+            <div class="product_cont">
+                <div class="product_item">
+                    <img class="product_image" src="images/product1.png">
                 </div>
-                <div class="service_item">
-                    <div class="service_image" style="background-image: url(images/services_foot.png)">
-
-                    </div>
-                    <h3>
-                        Foot Massage
-                    </h3>
+                <div class="product_item">
+                    <img class="product_image" src="images/product2.png">
                 </div>
-                <div class="service_item">
-                    <div class="service_image" style="background-image: url(images/services_massage.jpg)">
-
-                    </div>
-                    <h3>
-                        Body Massage
-                    </h3>
+                <div class="product_item">
+                    <img class="product_image" src="images/product3.png">
                 </div>
-                <div class="service_item">
-                    <div class="service_image" style="background-image: url(images/services_facial.png)">
-
-                    </div>
-                    <h3>
-                        Facials
-                    </h3>
+                <div class="product_item">
+                    <img class="product_image" src="images/product4.png">
                 </div>
-                <div class="service_item">
-                    <div class="service_image" style="background-image: url(images/services_eyelash.jpg)">
-
-                    </div>
-                    <h3>
-                        Eye Lash Extensions
-                    </h3>
+                <div class="product_item">
+                    <img class="product_image" src="images/product5.png">
+                </div>
+                <div class="product_item">
+                    <img class="product_image" src="images/product6.png">
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="footer1">
-
+        <div class="footer_cont">
+            <div class="footer_block">
+                <div class="footer_block2">
+                    <a style="text-decoration: none; color: white;" href="https://www.google.com/maps/dir//cosi+bella+spa+michigan/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8824e0caedb83d6b:0x964fcb07345b78b?sa=X&ved=2ahUKEwjk6IXxtpveAhUKZd8KHYI2DScQ9RcwAHoECAEQCQ">
+                    <p>
+                        3677 23 Mile Rd,<br>
+                        Shelby Charter Township,<br>
+                        MI 48315
+                    </p>
+                    </a>
+                </div>
+                <div class="footer_block1">
+                    <img class="footer_logo" src="images/footer_logo.svg">
+                    <div class="social_cont">
+                        <a class="no_link" href=""><img src="images/facebook.png"></a>
+                        <a class="no_link" href="https://www.instagram.com/cosibellanailspa/"><img src="images/instagram.png"></a>
+                        <a class="no_link" href="https://twitter.com/CosiBellaNail"><img src="images/twitter.png"></a>
+                    </div>
+                </div>
+                <div class="footer_block2">
+                    <p>
+                        Mon-Fri: &nbsp; &nbsp;10am - 7pm<br>
+                        Saturday: &nbsp;9am - 6pm<br>
+                        Sunday:&nbsp;&nbsp;&nbsp;&nbsp;10am - 5pm
+                    </p>
+                </div>
             </div>
             <div class="footer2">
-                <a style="text-decoration: none; color: white;" href="https://www.google.com/maps/dir//cosi+bella+spa+michigan/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8824e0caedb83d6b:0x964fcb07345b78b?sa=X&ved=2ahUKEwjk6IXxtpveAhUKZd8KHYI2DScQ9RcwAHoECAEQCQ"><p>
-                    3677 23 Mile Rd, Shelby Charter Township, MI 48315
-                </a></p>
-            </div>
-            <div class="footer3">
                 <p>&copy; All Rights Reserved. Cosi Bella Nail Spa, 2018</p>
-                <p>Crafted By KC Designs.</p>
+            </div>
+            <div class="footer4">
+                <a class="no_link" href="https://kevin1793.github.io" target="_blank"><p>Crafted By KC Designs.</p></a>
             </div>
         </div>
         
