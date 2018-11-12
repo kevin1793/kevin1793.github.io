@@ -6,3 +6,12 @@ p{
     line-height: 28px;
     font-weight: 600;
 }
+.back_up{
+    bottom: 0;
+    right: 0;
+    background-image: url('../images/arrow_up_fill.png');
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    position: fixed;
+}
