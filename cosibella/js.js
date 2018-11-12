@@ -18,6 +18,17 @@ function backTop(){
     // });
 }
 
+function toggleNav(){
+    if($('.navbar_mobile_menu').hasClass('active')){
+        $('.navbar_mobile_menu').removeClass('active');
+        $('.navbar_mobile_menu').slideUp('fast');
+    }
+    else{
+        $('.navbar_mobile_menu').addClass('active');
+        $('.navbar_mobile_menu').slideDown('fast');
+    }
+}
+
 $( document ).ready(function() {
     $('.home1_header').hide();
     $('.home1_header2').hide();
