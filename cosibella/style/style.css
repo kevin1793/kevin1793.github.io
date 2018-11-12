@@ -1,4 +1,4 @@
-p{
+.main_cont p{
     padding-top: 20px;
     margin: 0;
     font-family: 'Bad Script', cursive;
@@ -14,4 +14,7 @@ p{
     height: 80px;
     width: 80px;
     position: fixed;
+}
+.footer_cont p{
+    font-family: 'Niramit', sans-serif !important;
 }

@@ -16,6 +16,7 @@
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
 
         <!-- JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -55,6 +56,53 @@
                 font-family: 'Bad Script', cursive;
                 font-weight: bold;
                 font-size: 23px;
+            }
+            .contact_cont{
+                display: flex;
+                justify-content: center;
+                font-family: 'Niramit', sans-serif;
+            }
+            .contact_cont div{
+                padding: 20px;
+            }
+            .map{
+                padding: 0;
+                max-width: 600px;
+                /* width: 100% !important; */
+                height: 500px;
+            }
+            #map-container{
+                padding: 0;
+                max-width: 800px;
+            }
+            /* iframe{
+                max-width: 800px;
+            } */
+            p{
+                font-family: 'Niramit', sans-serif;
+                padding-bottom: 10px;
+                font-weight: 500;
+                padding-top: 5px;
+            }
+            .contact1 h4{
+                font-weight: bold;
+                margin-bottom:10px;
+            }
+
+            @media screen and (max-width:900px){
+                .contact1{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                .map{
+                    max-width: 100%;
+                }
+                .contact_cont{
+                    display: block;
+                    margin: 0 auto;
+                    justify-content: center;
+                }
             }
         </style>
     </head>
@@ -120,10 +168,39 @@
             </div>
             <div class="contact_cont">
                 <div class="contact1">
-
+                    <div class="contact_item">
+                        <h4>
+                            Business Hours
+                        </h4>
+                        <p>
+                            Mon-Fri:    10am - 7pm<br>
+                            Saturday:  9am - 6pm<br>
+                            Sunday:    10am - 5pm
+                        </p>
+                    </div>
+                    <div class="contact_item">
+                        <h4>
+                            Address
+                        </h4>
+                        <p>
+                            13677  23 Mile  Rd,<br>
+                            Shelby Carter Township,<br>
+                            MI 48315
+                        </p>
+                    </div>
+                    <div class="contact_item">
+                        <h4>
+                            Tel:
+                        </h4>
+                        <a class="no_link" href="tel:5862476700">
+                            <p style="text-align: left;">
+                                (586) 247-6700
+                            </p>
+                        </a>
+                    </div>
                 </div>
                 <div class="contact2">
-
+                        <iframe width="800" class="map"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>                    </div>
                 </div>
             </div>
         </div>
