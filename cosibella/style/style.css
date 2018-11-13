@@ -32,3 +32,6 @@ body {
 .nav_items a{
     text-decoration: none !important;
 }
+.navbar_mobile_menu{
+    text-decoration: none !important;
+}
