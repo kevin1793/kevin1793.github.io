@@ -142,6 +142,9 @@
 .footer4{
     background: white;
 }
+.back_up{
+    z-index: 120;
+}
 
 
 /*  */
