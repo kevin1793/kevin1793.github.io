@@ -1,286 +1,371 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-        <!-- BOOTSTRAP -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-        <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bad+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
 
-        <!-- JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <script src="js.js"></script>
-        <link rel="stylesheet" type="text/css" href="style/nav.css">
-        <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
-        <style>
-            h1, h2, h3{
-                margin: 0;
-                font-family: 'Great Vibes', cursive;
-            }
-            .home2_header h2{
-                text-align: center;
-                font-size: 49px;
-                padding-top: 80px;
-                padding-bottom: 30px;
-                font-weight: 700;
-                color: #333;
-                text-shadow: #a2a2a2 1px 1px;
-            }
-            .home2{
-                padding-bottom: 50px;
-            }
-            .home2_header{
-                text-align: center;
-                max-width: 800px;
-                line-height: 28px;
-                margin: 0 auto;
-            }
-            .home2_header h4{
-                font-family: 'Bad Script', cursive;
-                font-weight: bold;
-                font-size: 23px;
-            }
-            .contact_cont{
-                display: flex;
-                justify-content: center;
-                font-family: 'Niramit', sans-serif;
-            }
-            .contact_cont div{
-                padding: 20px;
-            }
-            .map{
-                padding: 0;
-                max-width: 600px;
-                /* width: 100% !important; */
-                height: 500px;
-            }
-            #map-container{
-                padding: 0;
-                max-width: 850px;
-            }
-            /* iframe{
+    <style>
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            font-family: 'Great Vibes', cursive;
+        }
+
+        .home2_header h2 {
+            text-align: center;
+            font-size: 49px;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            font-weight: 700;
+            color: #333;
+            text-shadow: #a2a2a2 1px 1px;
+        }
+
+        .home2 {
+            padding-bottom: 50px;
+        }
+
+        .home2_header {
+            text-align: center;
+            max-width: 800px;
+            line-height: 28px;
+            margin: 0 auto;
+        }
+
+        .home2_header h4 {
+            font-family: 'Bad Script', cursive;
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        .contact_cont {
+            display: flex;
+            justify-content: center;
+            font-family: 'Niramit', sans-serif;
+        }
+
+        .contact_cont div {
+            padding: 20px;
+            padding-bottom: 0px;
+        }
+
+        .map {
+            padding: 0;
+            max-width: 600px;
+            /* width: 100% !important; */
+            height: 500px;
+        }
+
+        #map-container {
+            padding: 0;
+            max-width: 850px;
+        }
+
+        /* iframe{
                 max-width: 800px;
             } */
-            .main_cont p{
-                padding-top: 20px;
-                margin: 0;
-                font-family: 'Bad Script', cursive;
-                font-size: 18px;
-                line-height: 28px;
-                font-weight: 600;
-            }
-            .contact1 h4{
-                font-weight: bold;
-                margin-bottom:10px;
+        .main_cont p {
+            padding-top: 20px;
+            margin: 0;
+            font-family: 'Bad Script', cursive;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+        }
+
+        .contact1 h4 {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .emp_cont button{
+            padding: 10px 30px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            background: #333;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            color: white;
+            box-shadow: 2px 2px 3px #a2a2a2;
+        }
+
+        @media screen and (max-width:900px) {
+            .contact1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
             }
 
-            @media screen and (max-width:900px){
-                .contact1{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                }
-                .map{
-                    max-width: 100%;
-                }
-                .contact_cont{
-                    display: block;
-                    margin: 0 auto;
-                    justify-content: center;
-                }
+            .map {
+                max-width: 100%;
             }
-        </style>
-    </head>
-    <body>
-        <div class="back_up" onclick="backTop();">
 
-        </div>
-        <div class="nav_cont">
-            <div class="navbar1">
-
-            </div>
-            <div class="navbar2">
-                <div class="nav_items navbar_desktop">
-                    <a href="main.html">
-                        <span  class="nav_item">
-                            Home
-                        </span>
-                    </a>
-                    <a href="nails.html">
-                        <span class="nav_item">
-                            Nails
-                        </span>
-                    </a>
-                    <a href="spa.html">
-                        <span class="nav_item">
-                            Spa
-                        </span>
-                    </a>
-                    <a href="about-us.html">
-                        <span class="nav_item">
-                            About Us
-                        </span>
-                    </a>
-                    <a href="gift-cards.html">
-                        <span class="nav_item">
-                            Gift Cards
-                        </span>
-                    </a>
-                    <a href="contact-us.html">
-                        <span class="nav_item">
-                            Contact Us
-                        </span>
-                    </a>
-                </div>
-                <div class="navbar_mobile" onclick="toggleNav();">
-                    <img src="images/hamburger-white.svg">
-                </div>
-                <div class="navbar_mobile_menu">
-                    <a href="main.html">
-                        <span  class="nav_item">
-                            Home
-                        </span>
-                    </a>
-                    <a href="nails.html">
-                        <span class="nav_item">
-                            Nails
-                        </span>
-                    </a>
-                    <a href="spa.html">
-                        <span class="nav_item">
-                            Spa
-                        </span>
-                    </a>
-                    <a href="about-us.html">
-                        <span class="nav_item">
-                            About Us
-                        </span>
-                    </a>
-                    <a href="gift-cards.html">
-                        <span class="nav_item">
-                            Gift Cards
-                        </span>
-                    </a>
-                    <a href="contact-us.html">
-                        <span class="nav_item">
-                            Contact Us
-                        </span>
-                    </a>
-                </div>
-            </div>
-            <div class="navbar3">
-                <!-- <p>Call Us (568) 247 6700</p> -->
-            </div>
-        </div>
-        <div class="">
+            .contact_cont {
+                display: block;
+                margin: 0 auto;
+                justify-content: center;
+            }
             
+        }
+        @media screen and (max-width:600px) {
+            .contact1 {
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                justify-content: center;
+                /* width: 100%; */
+            }
+            .contact_item p{
+                text-align: center !important;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back_up" onclick="backTop();">
+
+    </div>
+    <div class="nav_cont">
+        <div class="navbar1">
+
         </div>
-        <div class="home2">
-            <div class="home2_header">
-                <h2 class="">
-                    Contact Us
-                </h2>
-                
-                <!-- <h4 class="">
-                    Here at Cosi Bella, we provide quality service from head to toe. You can expect the best experience from the minute you walk in to the minute you walk out.
-                    We take pride in giving you the most relaxing service you can ask for.
-                </h4> -->
+        <div class="navbar2">
+            <div class="nav_items navbar_desktop">
+                <a href="main.html">
+                    <span class="nav_item">
+                        Home
+                    </span>
+                </a>
+                <a href="nails.html">
+                    <span class="nav_item">
+                        Nails
+                    </span>
+                </a>
+                <a href="spa.html">
+                    <span class="nav_item">
+                        Spa
+                    </span>
+                </a>
+                <a href="about-us.html">
+                    <span class="nav_item">
+                        About Us
+                    </span>
+                </a>
+                <a href="gift-cards.html">
+                    <span class="nav_item">
+                        Gift Cards
+                    </span>
+                </a>
+                <a href="contact-us.html">
+                    <span class="nav_item">
+                        Contact Us
+                    </span>
+                </a>
             </div>
-            <div class="contact_cont">
-                <div class="contact1">
-                    <div class="contact_item">
-                        <h4>
-                            Business Hours
-                        </h4>
-                        <p>
-                            Mon-Fri:    10am - 7pm<br>
-                            Saturday:  9am - 6pm<br>
-                            Sunday:    10am - 5pm
-                        </p>
-                    </div>
-                    <div class="contact_item">
-                        <h4>
-                            Address
-                        </h4>
-                        <p>
-                            13677  23 Mile  Rd,<br>
-                            Shelby Carter Township,<br>
-                            MI 48315
-                        </p>
-                    </div>
-                    <div class="contact_item">
-                        <h4>
-                            Tel:
-                        </h4>
-                        <a class="no_link" href="tel:5862476700">
-                            <p style="text-align: left;">
-                                (586) 247-6700
-                            </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact2">
-                        <iframe width="800" class="map"frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>                    </div>
-                </div>
+            <div class="navbar_mobile" onclick="toggleNav();">
+                <img src="images/hamburger-white.svg">
             </div>
-        </div>
-        <div class="footer_cont">
-            <div class="footer_block">
-                <div class="footer_block1 footer_mobile">
-                    <img class="footer_logo" src="images/footer_logo.svg">
-                    <div class="social_cont">
-                        <a class="no_link" href="https://www.facebook.com/cosibellanailspa/?ref=br_rs"><img src="images/facebook.png"></a>
-                        <a class="no_link" href="https://www.instagram.com/cosibellanailspa/"><img src="images/instagram.png"></a>
-                        <a class="no_link" href="https://twitter.com/CosiBellaNail"><img src="images/twitter.png"></a>
-                    </div>
-                </div>
-                <div class="footer_block2">
-                    <a style="text-decoration: none; color: white;" href="https://www.google.com/maps/dir//cosi+bella+spa+michigan/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8824e0caedb83d6b:0x964fcb07345b78b?sa=X&ved=2ahUKEwjk6IXxtpveAhUKZd8KHYI2DScQ9RcwAHoECAEQCQ">
-                        <p>
-                            3677 23 Mile Rd,<br>
-                            Shelby Charter Township,<br>
-                            MI 48315
-                        </p>
-                    </a>
-                </div>
-                <div class="footer_block1 footer_desktop">
-                    <img class="footer_logo" src="images/footer_logo.svg">
-                    <div class="social_cont">
-                        <a class="no_link" href="https://www.facebook.com/cosibellanailspa/?ref=br_rs"><img src="images/facebook.png"></a>
-                        <a class="no_link" href="https://www.instagram.com/cosibellanailspa/"><img src="images/instagram.png"></a>
-                        <a class="no_link" href="https://twitter.com/CosiBellaNail"><img src="images/twitter.png"></a>
-                    </div>
-                </div>
-                <div class="footer_block2">
-                    <p>
-                        Mon-Fri: &nbsp; &nbsp;10am - 7pm<br>
-                        Saturday: &nbsp;9am - 6pm<br>
-                        Sunday:&nbsp;&nbsp;&nbsp;&nbsp;10am - 5pm
-                    </p>
-                </div>
-            </div>
-            <div class="footer2">
-                <p>&copy; All Rights Reserved. Cosi Bella Nail Spa, 2018</p>
-            </div>
-            <div class="footer4">
-                <a class="no_link" href="https://kevin1793.github.io" target="_blank">
-                    <p>Crafted By KC Designs.</p>
+            <div class="navbar_mobile_menu">
+                <a href="main.html">
+                    <span class="nav_item">
+                        Home
+                    </span>
+                </a>
+                <a href="nails.html">
+                    <span class="nav_item">
+                        Nails
+                    </span>
+                </a>
+                <a href="spa.html">
+                    <span class="nav_item">
+                        Spa
+                    </span>
+                </a>
+                <a href="about-us.html">
+                    <span class="nav_item">
+                        About Us
+                    </span>
+                </a>
+                <a href="gift-cards.html">
+                    <span class="nav_item">
+                        Gift Cards
+                    </span>
+                </a>
+                <a href="contact-us.html">
+                    <span class="nav_item">
+                        Contact Us
+                    </span>
                 </a>
             </div>
         </div>
-        
-    </body>
+        <div class="navbar3">
+            <!-- <p>Call Us (568) 247 6700</p> -->
+        </div>
+    </div>
+    <div class="">
+
+    </div>
+    <div class="home2">
+        <div class="home2_header">
+            <h2 class="">
+                Contact Us
+            </h2>
+
+            <!-- <h4 class="">
+                    Here at Cosi Bella, we provide quality service from head to toe. You can expect the best experience from the minute you walk in to the minute you walk out.
+                    We take pride in giving you the most relaxing service you can ask for.
+                </h4> -->
+        </div>
+        <div class="contact_cont">
+            <div class="contact1">
+                <div class="contact_item">
+                    <h4>
+                        Business Hours
+                    </h4>
+                    <p>
+                        Mon-Fri: 10am - 7pm<br>
+                        Saturday: 9am - 6pm<br>
+                        Sunday: 10am - 5pm
+                    </p>
+                </div>
+                <div class="contact_item">
+                    <h4>
+                        Address
+                    </h4>
+                    <p>
+                        13677 23 Mile Rd,<br>
+                        Shelby Carter Township,<br>
+                        MI 48315
+                    </p>
+                </div>
+                <div class="contact_item">
+                    <h4>
+                        Tel:
+                    </h4>
+                    <a class="no_link" href="tel:5862476700">
+                        <p style="text-align: left;">
+                            (586) 247-6700
+                        </p>
+                    </a>
+                </div>
+                <div class="contact_item">
+                    <h4>
+                        Email:
+                    </h4>
+                    <a class="no_link" href="mailto:cosibellanailspa@gmail.com">
+                        <p style="text-align: left;">
+                            cosibellanailspa@gmail.com
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="contact2">
+                <iframe width="800" class="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br><small><a
+                        href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=13677++23+Mile++Rd++at++Schoenherr+++%E2%80%A2+++Shelby++Twp,++MI+48315&amp;aq=&amp;sll=42.584919,-82.914511&amp;sspn=0.218654,0.528374&amp;ie=UTF8&amp;hq=&amp;hnear=13677+23+Mile+Rd,+Charter+Township+of+Shelby,+Michigan+48315&amp;t=m&amp;ll=42.670509,-82.991238&amp;spn=0.018932,0.025663&amp;z=14&amp;iwloc=A"
+                        style="color:#0000FF;text-align:left">View Larger Map</a></small>
+            </div>
+        </div>
+        <!--  -->
+        <div class="divider"></div>
+        <!--  -->
+        <div class="home2_header side_padding">
+            <h2 class="">
+                Employment
+            </h2>
+
+            <h6 class="standard_text" style="text-align: justify;">
+                We view ourselves, each other, and Così Bella Nail Spa as a whole as “works in progress.” We recognize that evolving 
+                as both individuals and as a company is difficult, but we relish the challenge because the payoff is worth it. We are looking 
+                for talented and experienced nail technicians specializing in manicures and pedicures, and massage therapists. So if you are 
+                interested, please download and fill out out form!
+
+                When you are done, please email us. We will contact you as soon as we are done reviewing your application!
+            </h6>
+            <div class="emp_cont">
+                <!-- <button class="emp_button" onclick="downloadEmp()">FORM</button> -->
+                <form method="get" target="_blank" action="assets/employment-application.pdf">
+                    <button type="submit">FORM</button>
+                </form>
+            </div>
+            <!-- <h6 class="standard_text" style="text-align: justify;">
+                When you are done, please email us. We will contact you as soon as we are done reviewing your application!
+            </h6> -->
+        </div>
+    </div>
+    <div class="footer_cont">
+        <div class="footer_block">
+            <div class="footer_block1 footer_mobile">
+                <img class="footer_logo" src="images/footer_logo.svg">
+                <div class="social_cont">
+                    <a class="no_link" href="https://www.facebook.com/cosibellanailspa/?ref=br_rs"><img src="images/facebook.png"></a>
+                    <a class="no_link" href="https://www.instagram.com/cosibellanailspa/"><img src="images/instagram.png"></a>
+                    <a class="no_link" href="https://twitter.com/CosiBellaNail"><img src="images/twitter.png"></a>
+                </div>
+            </div>
+            <div class="footer_block2">
+                <a style="text-decoration: none; color: white;" href="https://www.google.com/maps/dir//cosi+bella+spa+michigan/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x8824e0caedb83d6b:0x964fcb07345b78b?sa=X&ved=2ahUKEwjk6IXxtpveAhUKZd8KHYI2DScQ9RcwAHoECAEQCQ">
+                    <p>
+                        3677 23 Mile Rd,<br>
+                        Shelby Charter Township,<br>
+                        MI 48315
+                    </p>
+                </a>
+            </div>
+            <div class="footer_block1 footer_desktop">
+                <img class="footer_logo" src="images/footer_logo.svg">
+                <div class="social_cont">
+                    <a class="no_link" href="https://www.facebook.com/cosibellanailspa/?ref=br_rs"><img src="images/facebook.png"></a>
+                    <a class="no_link" href="https://www.instagram.com/cosibellanailspa/"><img src="images/instagram.png"></a>
+                    <a class="no_link" href="https://twitter.com/CosiBellaNail"><img src="images/twitter.png"></a>
+                </div>
+            </div>
+            <div class="footer_block2">
+                <p>
+                    Mon-Fri: &nbsp; &nbsp;10am - 7pm<br>
+                    Saturday: &nbsp;9am - 6pm<br>
+                    Sunday:&nbsp;&nbsp;&nbsp;&nbsp;10am - 5pm
+                </p>
+            </div>
+        </div>
+        <div class="footer2">
+            <p>&copy; All Rights Reserved. Cosi Bella Nail Spa, 2018</p>
+        </div>
+        <div class="footer4">
+            <a class="no_link" href="https://kevin1793.github.io" target="_blank">
+                <p>Crafted By KC Designs.</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
 </html>

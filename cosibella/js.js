@@ -27,6 +27,11 @@ function toggleNav(){
     }
 }
 
+function downloadEmp(){
+    $('.emp_button').attr({target: '_blank', 
+                    href  : 'http://localhost/assets/employment-application.pdf'});
+}
+
 $(window).resize(function() {
 
     let w_width =  $(window).width();

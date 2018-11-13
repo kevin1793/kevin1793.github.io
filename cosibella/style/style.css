@@ -35,3 +35,14 @@ body {
 .navbar_mobile_menu{
     text-decoration: none !important;
 }
+
+.divider{
+    width: 100px;
+    border-bottom: solid 2px black;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.side_padding{
+    padding: 0px 20px;
+}
