@@ -28,3 +28,7 @@ body {
     margin: 0 auto;
     font-family: 'Niramit', sans-serif !important;
 }
+
+.nav_items a{
+    text-decoration: none !important;
+}
