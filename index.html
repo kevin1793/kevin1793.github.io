@@ -1,427 +1,399 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>KC Designs</title>
-    <meta name="og:title" property="og:title" content="KC Designs - Kevin Claveria">
-    <meta name="description" content="Welcome to my portfolio website! Here is a scope of all the projects I have been involved in. These range from websites, blogs, web applications, mobile apps, and more. Please look around!">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="index, follow">
-    <meta name="keywords" content="Kevin, Claveria, KC, Designs, kevin1793, web, design, developer, seo">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>KC Designs</title>
+  <meta name="og:title" property="og:title" content="KC Designs - Kevin Claveria">
+  <meta name="description"
+    content="Welcome to my portfolio website! Here is a scope of all the projects I have been involved in. These range from websites, blogs, web applications, mobile apps, and more. Please look around!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Kevin, Claveria, KC, Designs, kevin1793, web, design, developer, seo">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    
-    <script>
-    
-    
-        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
 
-    $(".section1").ready(function(){
-        $(".homebar").hide();
-        $(".kevin").hide();
-        $(".title").hide();
-        // $(".site_overlay").hide();
-        $(".section2_1").hide();
-        $(".section2_2").hide();
-        $(".skills2").find('h4').hide();
-        $(".section1_cont").find('img').hide();
-        $(".skills2").find('img').css('height', '80px;');
-        $(".skills2").find('img').addClass('skillsStart');
-        // $("body").css( "visibility", "visible");
-        setTimeout(
-        function() 
-        {
-            $(".homebar").slideDown(500);
-        }, 1000);
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
-        setTimeout(
-        function() 
-        {
-            $(".kevin").fadeIn(500);
-        }, 1500);
+  <script>
+    $(".section1").ready(function () {
+      $(".homebar").hide();
+      $(".kevin").hide();
+      $(".title").hide();
+      $(".section2_1").hide();
+      $(".section2_2").hide();
+      $(".skills2").find('h4').hide();
+      $(".section1_cont").find('img').hide();
+      $(".skills2").find('img').css('height', '80px;');
+      $(".skills2").find('img').addClass('skillsStart');
+      setTimeout(function () {
+        $(".homebar").slideDown(500);
+      }, 1000);
 
-        setTimeout(
-        function() 
-        {
-            $(".title").fadeIn(500);
-        }, 2000);
-        setTimeout(
-        function() 
-        {
-            $(".section1_cont").find('img').fadeIn(500);
-        }, 2500);
-    
-        $(function () {
-            $('.sendMail').click(function (event) {
-                var email = 'kevin.d.claveria@gmail.com';
-                var subject = '';
-                var emailBody = '';
-                var attach = '';
-                document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
-            });
+      setTimeout(function () {
+        $(".kevin").fadeIn(500);
+      }, 1500);
+
+      setTimeout(function () {
+        $(".title").fadeIn(500);
+      }, 2000);
+      setTimeout(function () {
+        $(".section1_cont").find('img').fadeIn(500);
+      }, 2500);
+
+      $(function () {
+        $('.sendMail').click(function (event) {
+          var email = 'kevin.d.claveria@gmail.com';
+          var subject = '';
+          var emailBody = '';
+          var attach = '';
+          document.location = "mailto:" + email + "?subject=" + subject + "&body=" + emailBody;
         });
-    
-        //navbar
-        $( ".nav_home" ).click(function() {
-            $('html, body').animate({
-                scrollTop: $("div.section1").offset().top
-            }, 1000)
-        });
+      });
 
-        $( ".nav_contact" ).click(function() {
-            $('html, body').animate({
-                scrollTop: $("div.contact").offset().top
-            }, 1000)
-        });
+      //navbar
+      $(".nav_home").click(function () {
+        $('html, body').animate({
+          scrollTop: $("div.section1").offset().top
+        }, 1000)
+      });
 
-        // interactives
-        
+      $(".nav_contact").click(function () {
+        $('html, body').animate({
+          scrollTop: $("div.contact").offset().top
+        }, 1000)
+      });
 
-        $( ".section1" ).hover(function() {
-            
-            if ($('.section1_cont').find('img').css('margin-top') === '250px'){
-                $('.section1_cont').find('img').animate({
-                    'margin-top': '20px',
-                }, 300)
-            }
-        });
+      // interactives
+      $(".section1").hover(function () {
+        if ($('.section1_cont').find('img').css('margin-top') === '250px') {
+          $('.section1_cont').find('img').animate({
+            'margin-top': '20px',
+          }, 300)
+        }
+      });
 
-        $( ".section2" ).hover(function() {
-            if ($('.section1_cont').find('img').css('margin-top') === '20px'){
-                $('.section1_cont').find('img').animate({
-                    'margin-top': '250px',
-                }, 350)
-            }
-            
-        });
-        
-        $( ".skills2" ).mouseenter(function() {
-            $(this).find(".underline").slideUp(200);
-            if ($(this).find('img').hasClass('skillsStart')){
-                $(this).find('img').removeClass('skillsStart');
-                $(this).find('img').addClass('skillsEnd');
-            }
-            
-            $(this).find("h4").slideDown(500);
-        });
-        $( ".folder_img_cont" ).hover(function() {
-            $( this ).fadeOut( 500 );
-            $(".section2_1").slideDown(1000);
-            setTimeout(
-            function() 
-            {
-                $(".section2_2").slideDown(575);
-            }, 500);
-        });
+      $(".section2").hover(function () {
+        if ($('.section1_cont').find('img').css('margin-top') === '20px') {
+          $('.section1_cont').find('img').animate({
+            'margin-top': '250px',
+          }, 350)
+        }
+      });
+
+      $(".skills2").mouseenter(function () {
+        $(this).find(".underline").slideUp(200);
+        if ($(this).find('img').hasClass('skillsStart')) {
+          $(this).find('img').removeClass('skillsStart');
+          $(this).find('img').addClass('skillsEnd');
+        }
+        $(this).find("h4").slideDown(500);
+      });
+      $(".folder_img_cont").hover(function () {
+        $(this).fadeOut(500);
+        $(".section2_1").slideDown(1000);
+        setTimeout(function () {
+          $(".section2_2").slideDown(575);
+        }, 500);
+      });
     });
-    </script>
-    
+  </script>
+
 </head>
+
 <body>
-    <div class="homebar">
-        <div class="homebar1">
-            <p style='cursor:pointer;' class="nav_home" onclick="goToHome()">
-                Home
-            </p>
-            <p style='cursor:pointer;' class="nav_contact">
-                Contact
-            </p>
-        </div>
+  <div class="homebar">
+    <div class="homebar1">
+      <p style='cursor:pointer;' class="nav_home" onclick="goToHome()">
+        Home
+      </p>
+      <p style='cursor:pointer;' class="nav_contact">
+        Contact
+      </p>
     </div>
-    <div class="section1">
-        <div class="section1_cont">
-            <h1 class="kevin">
-                KEVIN CLAVERIA
-            </h1>
-            <h5 class="title">
-                FRONT END DEVELOPER
-            </h5>
-            <img src="images/pic.jpg">
-        </div>
+  </div>
+  <div class="section1">
+    <div class="section1_cont">
+      <h1 class="kevin">
+        KEVIN CLAVERIA
+      </h1>
+      <h5 class="title">
+        FRONT END ENGINEER
+      </h5>
+      <img src="images/pic.jpg">
     </div>
-    <div class="spacer">
+  </div>
+  <div class="spacer">
 
+  </div>
+  <div class="section2">
+    <div class="section2_1">
+      <h2>
+        Portfolio
+      </h2>
     </div>
-    <div class="section2">
-        <div class="section2_1">
-            <h2>
-                Portfolio
-            </h2>
-        </div>
-        <div class="section2_2">
-            <h6>
-                Welcome to my portfolio website! Here is a scope of
-                 all the projects I have been
-                involved in. These range from websites, blogs,
-                 web applications, mobile apps,
-                 and more. Please look around!
-            </h6>
-        </div>
-        <div class="folder_img_cont">
-            <img src="images/arrow.png" class="arrows">
-            <img src="images/folder.png" class="folder_img">
-            <img src="images/arrow.png" class="arrows flip">
-        </div>
+    <div class="section2_2">
+      <h6>
+        Welcome to my portfolio website! Here is a scope of
+        some the projects I have been
+        involved in. These range from websites,
+        web apps, games,
+        and more. Please look around!
+      </h6>
     </div>
-    <div class="repertoire">
-        <div class="repertoire1">
-            <h2>
-                Repertoire
-            </h2>
-        </div>
-        <div class="repertoire2">
-            <div class="skills1">
-                
-                <div class="skills2">
-                    <h3>
-                        Languages
-                    </h3>
-                    <img src='images/coding.png'>
-                    <h4>
-                        HTML/CSS<br>
-                        Javascript<br>
-                        Typescript<br>
-                        C#
-                    </h4>
-                    <div class="underline">
+    <div class="folder_img_cont">
+      <img src="images/arrow.png" class="arrows">
+      <img src="images/folder.png" class="folder_img">
+      <img src="images/arrow.png" class="arrows flip">
+    </div>
+  </div>
+  <div class="repertoire">
+    <div class="repertoire1">
+      <h2>
+        Repertoire
+      </h2>
+    </div>
+    <div class="repertoire2">
+      <div class="skills1">
+        <div class="skills2">
+          <h3>
+            Languages
+          </h3>
+          <img src='images/coding.png'>
+          <h4>
+            HTML/CSS<br>
+            JavaScript<br>
+            TypeScript<br>
+            C#
+          </h4>
+          <div class="underline">
 
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills1">
+        <div class="skills2">
+          <h3>
+            Frameworks
+          </h3>
+          <img class="skillImage" src='images/framework.png'>
+          <h4>
+            Angular<br>
+            Meteor<br>
+            Bootstrap<br>
+            jQuery
+          </h4>
+          <div class="underline">
+          </div>
+        </div>
+      </div>
+      <div class="skills1">
+        <div class="skills2">
+          <h3>
+            Tools
+          </h3>
+          <img src='images/tools1.jpg'>
+          <h4>
+            VS Code<br>
+            WordPress<br>
+            GitHub<br>
+            Unity<br>
+            Firebase<br>
+          </h4>
+          <div class="underline">
+          </div>
+        </div>
+      </div>
+      <div class="skills1">
+        <div class="skills2">
+          <h3>
+            Soft Skills
+          </h3>
+          <img src='images/soft.PNG'>
+          <h4>
+            Self-Starter<br>
+            Mentor<br>
+            Client-facing<br>
+            People/interpersonal skills<br>
+            Accountability<br>
+          </h4>
+          <div class="underline">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section3">
+    <div class="section3_1">
+      <h2>
+        Websites
+      </h2>
+    </div>
+    <div class="section3_2">
+      <div class="tile_cont">
+        <div class="tile_row">
+          <div class="tile flex_item6" style="background-image: url('images/mark.PNG')"
+            onclick="window.open('https://markpavingconcrete.com/','_blank')">
+            <div class="site_overlay">
+              <h3 style="margin-bottom: 0px" class="site_overlay_text">
+                Mark Paving Concrete
+              </h3>
             </div>
-            <div class="skills1" >
-                
-                <div class="skills2">
-                    <h3>
-                        Frameworks
-                    </h3>
-                    <img class="skillImage" src='images/framework.png'>
-                    <h4>
-                        Angular<br>
-                        Meteor<br>
-                        Bootstrap<br>
-                        Ionic 3<br>
-                        jQuery
-                    </h4>
-                    <div class="underline">
-
-                    </div>
-                </div>
+          </div>
+          <div class="tile flex_item6" style="background-image: url('images/mojave.PNG')"
+            onclick="window.open('https://www.mojaveenergyservices.com/','_blank')">
+            <div class="site_overlay">
+              <h3 style="margin-bottom: 0px" class="site_overlay_text">
+                Mojave Energy Services
+              </h3>
             </div>
-            <div class="skills1">
-                
-                <div class="skills2">
-                    <h3>
-                        Tools
-                    </h3>
-                    <img src='images/tools1.jpg'>
-                    <h4>
-                        Visual Studios Code<br>
-                        MongoDB<br>
-                        
-                        GitHub<br>
-                        Unity<br>
-                        Jira<br>
-                        
-                    </h4>
-                    <div class="underline">
-
-                    </div>
-                </div>
+          </div>
+          <div class="tile flex_item6" style="background-image: url('images/ittakeseverything.PNG')"
+            onclick="window.open('https://ittakeseverything.org/','_blank')">
+            <div class="site_overlay">
+              <h3 style="margin-bottom: 0px" class="site_overlay_text">
+                It Takes Everything
+              </h3>
             </div>
+          </div>
+          <div class="tile flex_item6" style="background-image: url('images/hp.PNG')"
+            onclick="window.open('https://www.hp-roofing.com/','_blank')">
+            <div class="site_overlay">
+              <h3 style="margin-bottom: 0px" class="site_overlay_text">
+                HP Roofing
+              </h3>
+            </div>
+          </div>
+          <div class="tile flex_item6" style="background-image: url('images/purpose.PNG')"
+            onclick="window.open('https://www.purposecomarketing.com/','_blank')">
+            <div class="site_overlay">
+              <h3 style="margin-bottom: 0px" class="site_overlay_text">
+                Purpose Marketing
+              </h3>
+            </div>
+          </div>
+          <div class="tile flex_item6" style="background-image: url('images/ace.PNG')"
+            onclick="window.open('https://www.rockeracementers.com/','_blank')">
+            <div class="site_overlay">
+              <h3 style="margin-bottom: 0px" class="site_overlay_text">
+                Rocker A Cementers
+              </h3>
+            </div>
+          </div>
+          <div class="tile flex_item5" style="background-image: url('images/vapewild.png')"
+            onclick="window.open('https://vapewild.com/','_blank')">
+            <div class="site_overlay">
+              <h3 class="site_overlay_text">
+                VapeWild
+              </h3>
+            </div>
+          </div>
+          <!-- <div class="tile flex_item1" style="background-image: url('images/terra.png')"
+            onclick="window.open('https://terralive.net/','_blank')">
+            <div class="site_overlay">
+              <h3 class="site_overlay_text">
+                Terra Oil Services
+              </h3>
+            </div>
+          </div> -->
+          <div class="tile flex_item2" style="background-image: url('images/amarillosurgery.png')"
+            onclick="window.open('https://surgerycenterofamarillo.com/','_blank')">
+            <div class="site_overlay">
+              <h3 class="site_overlay_text">
+                Amarillo Surgery Center
+              </h3>
+            </div>
+          </div>
+          <div class="tile flex_item4" style="background-image: url('images/hazmat.png')"
+            onclick="window.open('https://hazmatsafety.com/','_blank')">
+            <div class="site_overlay">
+              <h3 class="site_overlay_text">
+                Hazmat Safety
+              </h3>
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    <div class="section3">
-        <div class="section3_1">
-            <h2>
-                Websites
-            </h2>
-        </div>
-        <div class="section3_2">
-           <div class="tile_cont">
-                <div class="tile_row">
-                    <div class="tile flex_item6" style="background-image: url('images/mojave.PNG')" onclick="window.open('https://www.mojaveenergyservices.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 style="margin-bottom: 0px" class="site_overlay_text">
-                                Mojave Energy Services
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item6" style="background-image: url('images/complete.PNG')" onclick="window.open('https://www.complete-testing.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 style="margin-bottom: 0px" class="site_overlay_text">
-                                Complete Testing
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item6" style="background-image: url('images/hp.PNG')" onclick="window.open('https://www.hp-roofing.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 style="margin-bottom: 0px" class="site_overlay_text">
-                                HP Roofing
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item6" style="background-image: url('images/allies.PNG')" onclick="window.open('https://www.alliesattic.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 style="margin-bottom: 0px" class="site_overlay_text">
-                                Allie's Attic
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item6" style="background-image: url('images/ace.PNG')" onclick="window.open('https://www.rockeracementers.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 style="margin-bottom: 0px" class="site_overlay_text">
-                                Rocker A Cementers
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item6" style="background-image: url('images/cosibella.PNG')" onclick="window.open('http://www.cosibellanailspa.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 style="margin-bottom: 0px" class="site_overlay_text">
-                                Cosi Bella
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item5" style="background-image: url('images/vapewild.png')" onclick="window.open('https://vapewild.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                VapeWild
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item1" style="background-image: url('images/terra.png')" onclick="window.open('https://terralive.net/','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                Terra Oil Services
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item2" style="background-image: url('images/amarillosurgery.png')" onclick="window.open('https://surgerycenterofamarillo.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                Amarillo Surgery Center
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item4" style="background-image: url('images/lcu.png')" onclick="window.open('https://lcu.edu/','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                Lubbock Christian University
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item4" style="background-image: url('images/kadesblog.png')" onclick="window.open('https://blog.primitivesocial.com/kadewilcox','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                Primitive Social: Kade's Blog
-                            </h3>
-                        </div>
-                    </div>
-                    
-                    <div class="tile flex_item4" style="background-image: url('images/spulubbock.png')" onclick="window.open('https://spulubbock.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                Lubbock SPU
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="tile flex_item4" style="background-image: url('images/hazmat.png')" onclick="window.open('https://hazmatsafety.com/','_blank')">
-                        <div class="site_overlay">
-                            <h3 class="site_overlay_text">
-                                Hazmat Safety
-                            </h3>
-                        </div>
-                    </div>
-                    
-                </div>
-           </div>
-        </div>
+  </div>
+  <!-- <div class="section4">
+    <div class="section4_1">
+      <h2>
+        Mobile App
+      </h2>
     </div>
 
-    <div class="section4">
-        <div class="section4_1">
-            <h2>
-                Mobile App
-            </h2>
-        </div>
-        
-        <div class="section4_2_cont">
-            <div class="section4_2_cont1">
+    <div class="section4_2_cont">
+      <div class="section4_2_cont1">
 
-            </div>
-            <div class="section4_2_cont2">
-                <h2>
-                    Hurst Farm Supply
-                </h2>
-                <div>
-                    <h3>Ionic 3 Framework</h3>
-                    <h4 onclick="window.open('https://play.google.com/store/apps/details?id=hurstfarmsupply.v2.app','_blank')">Android</h4>
-                    <h4 onclick="window.open('https://itunes.apple.com/us/store','_blank')">Apple</h4>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section5">
-        <div class="section5_1">
-            <h2>
-                Game Development
-            </h2>
-        </div>
-        
-        <div class="section5_2">
-                <iframe class="vid" src="https://www.youtube-nocookie.com/embed/DMHnVIgBoBg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="contact">
-        <div class="contact_1">
-            <h2>
-                Contact
-            </h2>
-        </div>
-        
-        <div class="contact_2">
-            <h6>
-                I'm glad you've made it to the bottom! Do you like what you see?
-                 Want to learn more? Shoot me an email and let's talk more! I am always
-                 looking forward to designing and developing beautiful and smooth functioning sites.
-            </h6>
-            <div class="contact_link sendMail" onclick="sendMail()">
-                <img class="contactImage" src="images/email.jpg">
-                <img class="contactArrow" src="images/arrow.png">
-                <h6>kevin.d.claveria@gmail.com</h6>
-            </div>
-            <div class="contact_link" onclick="window.open('https://www.linkedin.com/in/kevin-claveria/','_blank')">
-                <img class="contactImage" src="images/linkedin.png">
-                <img class="contactArrow" src="images/arrow.png">
-                <h6>linkedin.com/in/kevin-claveria</h6>
-            </div>
-            <div class="contact_link" onclick="window.open('https://drive.google.com/open?id=1iaAHZ2dB0VBc-AMsWXime9nxeKiRSJNs','_blank')">
-                <img class="contactImage" src="images/resume.jpg">
-                <img class="contactArrow" src="images/arrow.png">
-                <h6>Resume</h6>
-            </div>
-            
-            
-        </div>
-    </div>
-
-    <div class="footer">
+      </div>
+      <div class="section4_2_cont2">
+        <h2>
+          Hurst Farm Supply
+        </h2>
         <div>
-            <p>
-                Designed and Developed By Kevin. (Under Construction)
-            </p>
+          <h3>Ionic 3 Framework</h3>
+          <h4 onclick="window.open('https://play.google.com/store/apps/details?id=hurstfarmsupply.v2.app','_blank')">
+            Android</h4>
+          <h4 onclick="window.open('https://itunes.apple.com/us/store','_blank')">Apple</h4>
+
         </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="section5">
+    <div class="section5_1">
+      <h2>
+        Game Development
+      </h2>
+    </div>
+    <div class="section5_2">
+      <iframe class="vid" src="https://www.youtube-nocookie.com/embed/DMHnVIgBoBg?rel=0" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="contact">
+    <div class="contact_1">
+      <h2>
+        Contact
+      </h2>
     </div>
 
-
+    <div class="contact_2">
+      <h6>
+        I'm glad you've made it to the bottom!
+        Want to know more? Shoot me an email and let's talk! I am always
+        looking forward to exchanging ideas, building web apps, creating games, and more!
+      </h6>
+      <div class="contact_link sendMail" onclick="sendMail()">
+        <img class="contactImage" src="images/email.jpg">
+        <img class="contactArrow" src="images/arrow.png">
+        <h6>kevin.d.claveria@gmail.com</h6>
+      </div>
+      <div class="contact_link" onclick="window.open('https://www.linkedin.com/in/kevin-claveria/','_blank')">
+        <img class="contactImage" src="images/linkedin.png">
+        <img class="contactArrow" src="images/arrow.png">
+        <h6>linkedin.com/in/kevin-claveria</h6>
+      </div>
+      <div class="contact_link"
+        onclick="window.open('https://drive.google.com/file/d/1ggn9ZiQympggnqou9j_jOjOyZ1EKNuFu/view?usp=sharing')">
+        <img class="contactImage" src="images/resume.jpg">
+        <img class="contactArrow" src="images/arrow.png">
+        <h6>Resume</h6>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div>
+      <p>Designed and Developed By Kevin.</p>
+    </div>
+  </div>
 </body>
 </html>

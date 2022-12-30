@@ -90,7 +90,7 @@
 .skillsStart {
     height: 80px;
     width: auto;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 .skills2:hover img{
     padding-top: 0px ;
@@ -126,6 +126,12 @@
     text-align: center;
     padding-top: 40px;
     text-shadow: 1px 1px 1px #BDBDBD
+}
+.skillsEnd{
+  border-radius: 50%;
+}
+.skillsStart{
+  border-radius: 50%;
 }
 .repertoire2 {
     max-width: 1200px;
