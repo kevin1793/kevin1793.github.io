@@ -1,5 +1,66 @@
 /*  */
 
+.webApps{
+  background:#1a5086;
+  color:#fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.webApps h2{
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.webAppInfo{
+  margin: 0 auto;
+  max-width: 600px !important;
+  margin-bottom:20px;
+}
+.sectionCont{
+  font-family: 'Raleway', sans-serif;
+  padding: 0px 30px;
+  padding-bottom:130px;
+  margin:0 auto;
+  max-width: 1600px;
+}
+.webApps a{
+  color: white;
+  font-size: 18px;
+}
+.webAppImages{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin:0 auto;
+  padding-top:50px;
+
+}
+.webAppImage{
+  width: 350px;
+  height: 320px;
+  margin: 10px;
+  background-size: cover;
+  position: relative;
+  box-shadow: 3px 3px 3px #000000;
+  transition: box-shadow .2s;
+  background-position: left;
+}
+.sectionCont h2{
+  text-shadow: 2px 2px 2px lightslategray;
+  width: 100%;
+  font-size: 40px;
+  padding: 80px 0px;
+  text-shadow: 2px 2px 2px #808080;
+}
+.webApps p{
+}
+.textWhite{
+  color:#fff;
+}
+.sectionCont h3{
+  font-size: 25px;
+  margin-top:0;
+}
 .contact_link .contactImage{
     height: 50px;
 }
@@ -224,9 +285,6 @@
 .section4_2_cont1:hover {
     box-shadow: 4px 4px 4px #757575;
     transition: box-shadow .2s;
-    /* transition: box-shadow .5s;
-    transition: height .5s;
-    transition: width .5s; */
 }
 .section4_2_cont1 {
     background-image: url('images/hurst.jpg');
@@ -236,8 +294,6 @@
     margin: 0 auto;
     box-shadow: 3px 3px 3px #808080;
     transition: box-shadow .2s;
-    /* transition: width .5s;
-    transition: box-shadow .5s; */
 }
 .section4_2 h6{
     font-size: 20px;
