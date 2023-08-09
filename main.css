@@ -381,7 +381,6 @@
     opacity: 0;
     transition: opacity .5s;
 }
-
 .tile {
     height: 280px;
     width: 350px;
